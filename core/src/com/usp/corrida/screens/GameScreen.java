@@ -211,9 +211,11 @@ public class GameScreen extends ScreenAdapter {
             long totalScore = score+scoreAdd;
             if (totalScore > core.save.getHighScore()){
                 core.save.setHighScore(totalScore);
-                gameOverMessage = "NOVO RECORDE!";
+//                gameOverMessage = "NOVO RECORDE!";
+                gameOverMessage = "NEW RECORD!";
             }
-            else gameOverMessage = "RECORDE: "+core.save.getHighScore();
+//            else gameOverMessage = "RECORDE: "+core.save.getHighScore();
+            else gameOverMessage = "RECORD: "+core.save.getHighScore();
         }
     }
 
@@ -379,7 +381,8 @@ public class GameScreen extends ScreenAdapter {
             if (time > GAMEOVER_SLIDE) gameOver = true;
 
             core.batch.draw(core.res.texBlack, 0, fx, core.width, core.height-32);
-            core.res.font32.draw(core.batch, "FIM DE JOGO!", 0, fx+core.height/2f+core.res.font32.getCapHeight()/2, core.width, 1, false);
+//            core.res.font32.draw(core.batch, "FIM DE JOGO!", 0, fx+core.height/2f+core.res.font32.getCapHeight()/2, core.width, 1, false);
+            core.res.font32.draw(core.batch, "GAME OVER!", 0, fx+core.height/2f+core.res.font32.getCapHeight()/2, core.width, 1, false);
             core.res.font20.draw(core.batch, gameOverMessage, 0, fx+core.height/2f+core.res.font32.getCapHeight()/2-25, core.width, 1, false);
         }
     }
@@ -401,7 +404,8 @@ public class GameScreen extends ScreenAdapter {
         }
 
         // Drawing score
-        core.res.font20.draw(core.batch, "PONTOS: "+ score, 10+20*2+16+10, core.height-32/2f+core.res.font20.getCapHeight()/2f);
+//        core.res.font20.draw(core.batch, "PONTOS: "+ score, 10+20*2+16+10, core.height-32/2f+core.res.font20.getCapHeight()/2f);
+        core.res.font20.draw(core.batch, "POINTS: "+ score, 10+20*2+16+10, core.height-32/2f+core.res.font20.getCapHeight()/2f);
 
         // Drawing characters
         for(int i = 0;i < MAX_NPC;i++){

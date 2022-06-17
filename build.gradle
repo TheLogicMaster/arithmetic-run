@@ -22,11 +22,14 @@ allprojects {
     version = '1.0'
     ext {
         appName = "Corrida Aritmetica"
-        gdxVersion = '1.9.10'
+        gdxVersion = '1.11.0'
         roboVMVersion = '2.3.8'
-        box2DLightsVersion = '1.4'
-        ashleyVersion = '1.7.0'
-        aiVersion = '1.8.0'
+        box2DLightsVersion = '1.5'
+        ashleyVersion = '1.7.4'
+        aiVersion = '1.8.2'
+        retroLambdaVersion = '2.5.7'
+        clearwingVersion = '0.1'
+        switchGdxVersion = '0.1'
     }
 
     repositories {

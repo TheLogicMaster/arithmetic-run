@@ -116,7 +116,8 @@ public class TitleScreen extends ScreenAdapter {
 
         // Draw "How to play"
         core.res.font32.setColor(0.8509803921568627f, 0.592156862745098f, 0.0784313725490196f, 1);
-        core.res.font32.draw(core.batch, "COMO JOGAR", 0, y+h-20, core.width, 1, false);
+//        core.res.font32.draw(core.batch, "COMO JOGAR", 0, y+h-20, core.width, 1, false);
+        core.res.font32.draw(core.batch, "HOW TO PLAY", 0, y+h-20, core.width, 1, false);
         core.res.font32.setColor(1, 1, 1, 1);
     }
 
@@ -135,14 +136,16 @@ public class TitleScreen extends ScreenAdapter {
         core.charPlayer.render(delta, 0);
 
         // Draw record text
-        core.res.font20.draw(core.batch, "RECORDE: "+core.save.getHighScore(), 10, core.height-32/2f+core.res.font20.getCapHeight()/2f);
+//        core.res.font20.draw(core.batch, "RECORDE: "+core.save.getHighScore(), 10, core.height-32/2f+core.res.font20.getCapHeight()/2f);
+        core.res.font20.draw(core.batch, "RECORD: "+core.save.getHighScore(), 10, core.height-32/2f+core.res.font20.getCapHeight()/2f);
 
         // Draw "Touch to play"
         float multiplier = ((float)Math.sin((double)System.currentTimeMillis()/(double)300)+1)/2f;
         core.batch.setColor(1f, 1f, 1f, 0.3f+0.3f*multiplier);
         core.batch.draw(core.res.texBlack, 0, core.height/2-15, core.width, 30);
         core.batch.setColor(1, 1, 1, 1);
-        core.res.font20.draw(core.batch, "TOQUE PARA JOGAR!", 0, core.height/2+core.res.font20.getCapHeight()/2, core.width, 1, false);
+//        core.res.font20.draw(core.batch, "TOQUE PARA JOGAR!", 0, core.height/2+core.res.font20.getCapHeight()/2, core.width, 1, false);
+        core.res.font20.draw(core.batch, "TAP TO PLAY!", 0, core.height/2+core.res.font20.getCapHeight()/2, core.width, 1, false);
 
         // Draw help button
         core.batch.draw(texHelpButton, core.width-16-8, core.height-16-8);

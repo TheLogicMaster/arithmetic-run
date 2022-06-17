@@ -4,7 +4,8 @@
 [![codecov](https://codecov.io/gh/lincolncpp/corrida_aritmetica/branch/master/graph/badge.svg)](https://codecov.io/gh/lincolncpp/corrida_aritmetica)
 [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/lincolncpp/corrida-aritmetica)
 
-Arithmetic run is a open source, cross-platform 2D game made in Java with libGDX.
+Arithmetic run is a open source, cross-platform 2D game made in Java with libGDX. Ported to 
+Nintendo Switch using [SwitchGDX](https://github.com/TheLogicMaster/switch-gdx).
 
 <img src="https://i.ibb.co/tM5hMdC/gith.png" width="700px" alt="screenshot"></a>
 
@@ -21,6 +22,9 @@ It uses javadoc to generate a documentation from the source code.
 The documentation can be accessed [here](https://lincolncpp.github.io/arithmetic-run/).
 
 ## Authors
+
+### Nintendo Switch Port
+- [TheLogicMaster](https://github.com/TheLogicMaster)
 
 ### Game development
 - Fernando Lincoln - [lincolncpp](https://github.com/lincolncpp)
